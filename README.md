@@ -379,5 +379,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ---
-#   j o h n - v i c t o r - p o r t f o l i o  
- 
