@@ -8,6 +8,8 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import { illustration, greeting } from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import newImage from "../../assets/images/linkedin_profile_portfolio.png";
+
 
 export default function Greeting() {
   const { isDark } = useContext(StyleContext);
@@ -52,16 +54,31 @@ export default function Greeting() {
               </div>
             </div>
           </div>
-          <div className="greeting-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
-            ) : (
-              <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
-              ></img>
-            )}
+          <div 
+            className="greeting-image-div" 
+            style={{ 
+              display: "flex", 
+              justifyContent: "center", 
+              alignItems: "center", 
+              marginTop: "-50px", 
+              padding: "10px"  
+            }}
+          >
+            <img
+              alt="profile"
+              src={newImage}
+              style={{
+                width: "350px",  // Adjust width as needed
+                height: "350px", // Adjust height as needed
+                borderRadius: "50%", // Makes the image round
+                objectFit: "cover",  // Ensures the image covers the entire area
+                boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",  // Optional: Adds a shadow
+              }}
+            />
           </div>
+
+
+
         </div>
       </div>
     </Fade>

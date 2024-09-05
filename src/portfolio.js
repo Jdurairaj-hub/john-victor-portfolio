@@ -26,7 +26,7 @@ const greeting = {
     "A passionate Software Engineer and DevOps Enthusiast 🚀 with experience in building robust web and mobile applications. Skilled in Java, Spring Boot, Python, JavaScript, ReactJS, and Node.js. Proficient in CI/CD pipelines, infrastructure automation, and cloud services (AWS, GCP). Dedicated to exploring tech stacks for efficient, scalable solutions."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1qvCKxg8KsVLlB5qCY12LOIk0ib1QXHIZ/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1A382GssxSGpwbHlfRrPwOWYFqhvBtY0b/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -191,40 +191,91 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "Showcasing a selection of my personal projects",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/scoremyresume.png"),
+      projectName: "RateMyResume",
+      projectDesc: "Increased resume quality for job seekers by 40% as measured by user feedback, by developing a Next.js web application that integrates Mistral & OpenAI APIs to provide real-time, AI-powered resume analysis and improvement suggestions.",
+      toolsUsed: "Next.js, TypeScript, Mistral API, OpenAI API, Node.js",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://rate-my-resume-1.vercel.app/"
+        },
+        {
+          name: "Code",
+          url: "https://github.com/Jdurairaj-hub/RateMyResume/"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/po_project.png"),
+      projectName: "Purchase Order Management System",
+      projectDesc: "Led the development of a comprehensive order management system that achieved a 40% increase in processing speed, a 50% reduction in response time, and a 25% boost in user satisfaction. Deployed on AWS EC2 with dynamic content rendering using React.js and efficient backend processing with Node.js and MySQL.",
+      toolsUsed: "AWS (EC2 & Route53), React.js, Node.js, RDBMS, RESTful API",
+      footerLink: [
+        {
+          name: "Code",
+          url: "https://github.com/Jdurairaj-hub/Purchase-Order" // Replace with your GitHub link
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/bci_lvl1.png"),
+      projectName: "Brain Computer Interface Game",
+      projectDesc: "Developed 'Mental Marauders,' a brain-computer interface (BCI) game with NeuroCognitive Imaging Lab at Dalhousie University, enabling control through EEG and fNIRS brain activity. Implemented core functionalities using Python and PyGame, including game levels, real-time data communication with NeuroPype, and Firebase integration for data logging. Ensured millisecond-level timing for EEG synchronization.",
+      toolsUsed: "Python, PyGame, Pytest, Firebase, NeuroPype, EEG, fNIRS",
+      // footerLink: [
+      //   {
+      //     name: "Visit Website",
+      //     url: "https://po.purchaseorder.xyz/" // Replace with your live link
+      //   },
+      //   {
+      //     name: "Code",
+      //     url: "https://github.com/Jdurairaj-hub/Purchase-Order" // Replace with your GitHub link
+      //   }
+      // ]
+    },
+    {
+      image: require("./assets/images/tradewise.png"),
+      projectName: "Trade Wise",
+      projectDesc: "Accumulated 2,000+ users by engineering an AI-driven financial assistant that provides real-time market insights, interactive charts, and financial data. Integrated advanced features like TrendSpotter, StockX-Ray, and CandleForge, delivering lightning-fast, precise analysis across global markets.",
+      toolsUsed: "NextJS, TailwindCSS, TypeScript, Llama3.1-70B-Groq API, TradingView API",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://trade-wise-theta.vercel.app/"
+        },
+        {
+          name: "Code",
+          url: "https://github.com/Jdurairaj-hub/TradeWise" // Replace with your GitHub link
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/dashboard.png"),
+      projectName: "Sales Insights",
+      projectDesc: "Developed a Power BI dashboard that improved sales efficiency by 20% and reduced reporting time by 25%. Analyzed over 20,000 transactions using SQL, improving data accuracy by 30%. Published the dashboard to the cloud, enhancing data access and collaboration.",
+      toolsUsed: "SQL, Power BI, DAX, MySQL",
+      footerLink: [
+        
+        {
+          name: "Code",
+          url: "https://github.com/Jdurairaj-hub/sales-insights-data-analysis" // Replace with your GitHub link
         }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
