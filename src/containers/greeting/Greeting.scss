@@ -113,6 +113,12 @@
   .greeting-image-div {
     height: 256px;
   }
+
+  /* Hide the image for mobile view */
+  .greeting-image-div img {
+    display: none;
+  }
+  
 }
 
 @media (max-width: 320px) {
